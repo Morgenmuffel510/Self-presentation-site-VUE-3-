@@ -1,30 +1,18 @@
 <template>
 
-  <footer class="border-t border-gray-600 py-10 grid grid-cols-3">
+  <footer class="border-t border-gray-600 py-10 grid grid-cols-3 max-md:grid-cols-1">
 
-    <p class="text-end">Анна Лаврищева</p>
-    <div>
-      <p class="text-center pb-5">+7 (909) 659-84-24</p>
-      <div class="flex flex-row justify-center">
-        <button class="border-none hover:opacity-60 mr-5 w-10">
-          <img src="/images/email.png" alt="Связаться со мной по email">
-        </button>
-        <button class="border-none hover:opacity-60 mr-5 w-10">
-          <img src="/images/whatsapp.png" alt="Связаться со мной по whatsup">
-        </button>
-        <button class="border-none hover:opacity-60 w-10">
-          <img src="/images/telegram.png" alt="Связаться со мной по telegram">
-        </button>
-      </div>
-    </div>
-    <p class="text-start">annaLavrishcheva5@yandex.ru</p>
-
+    <p class="text-end max-md:text-center">Анна Лаврищева</p>
+    <footer-button class="max-md:hidden" />
+    <p class="text-start  max-md:text-center">annaLavrishcheva5@yandex.ru</p>
+    <footer-button class="md:hidden" />
   </footer>
 
 </template>
 
 <script setup lang="ts">
 
+import FooterButton from "@/components/FooterButton.vue";
 </script>
 
 
